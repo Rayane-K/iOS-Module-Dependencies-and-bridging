@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  HomeViewController.swift
 //  Dependencies modularization
 //
 //  Created by Kurrimboccus Rayane on 10/04/2019.
@@ -9,12 +9,12 @@
 import UIKit
 import Payment
 
-class ViewController: UIViewController {
+class HomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        self.navigationController?.title = "App page"
+        self.title = "App page"
     }
 
 
