@@ -35,12 +35,12 @@ class PaymentService {
 
 /*
  By making this class conform to the protocol, and passing a reference to this class when instanciating the PaymentViewController (in ViewController.swift),
- you make sure the method pay(with cardnumber: String) (visible in the class above) will be called when the method pay(with card number: String) (called from the module, on the PaymentService reference which is of type PaymentProtocol.Type, just check the PaymentViewController.swift file
+ you make sure the method pay(with cardnumber: String) (visible in the class above) will be called when the method pay(with card number: String) (called from the module, on the PaymentService reference which is of type PaymentServiceProtocol.Type, just check the PaymentViewController.swift file
  
  To conclude, this allows you to call the method in the class above (which is defined in the app) FROM your module ! This is the bridge
  
  Note : This extension does not require to re-write the method contained in the protocol since its name (pay(with cardNumber: String)) is the same as the name in PaymentService class, so by default the system will use the method declared in PaymentService class
  */
-extension PaymentService: PaymentProtocol {
+extension PaymentService: PaymentServiceProtocol {
     
 }
