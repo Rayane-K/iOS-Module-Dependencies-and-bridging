@@ -12,9 +12,9 @@ public class PaymentViewController: UIViewController {
     
     @IBOutlet var cardNumberTextField: UITextField!
     @IBOutlet var messageLabel: UILabel!
-    private let paymentService: PaymentProtocol.Type
+    private let paymentService: PaymentServiceProtocol.Type
     
-    public init(paymentService: PaymentProtocol.Type) {
+    public init(paymentService: PaymentServiceProtocol.Type) {
         self.paymentService = paymentService
         super.init(nibName: nil, bundle: Bundle.payment)
     }
